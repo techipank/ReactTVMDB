@@ -1,0 +1,90 @@
+body{
+    background: $body-bg
+}
+*{
+    outline: none;
+    -webkit-outline:none;
+}
+@mixin active-tab-background($start,$end){
+    background-image:linear-gradient($start,$end);
+}
+.main{
+    margin-top:53px;
+}
+.navbar{
+    background: $navbar-background;
+    // opacity: 0.6;
+}
+.navbar input {
+    background: $navbar-input-background;
+    // opacity: 1;
+    color:$light;
+    border-color: $gray-500;
+    &:focus{
+        background: $navbar-input-background;
+        color:$light;
+        border-color: $gray-500;
+        opacity: 1;
+        box-shadow: none
+    }
+    &::-webkit-input-placeholder{
+        color: $gray-500;
+    }
+    &::-moz-input-placeholder{
+        color: $gray-500;
+    }
+    &::-ms-input-placeholder{
+        color: $gray-500;
+    }
+    &::placeholder{
+        color: $gray-500;
+    }
+}
+.error{
+    width: 100%;
+    height: 100vh;
+    align-content: center center;
+}
+.bg-404{
+    background-image:url('../assets/img/camera.png');
+    background-size: 100px auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.show-default-image{
+    width:220px;
+    height:auto;
+}
+.default-cast-image{
+    width: 210px;
+    height: 295px;
+    background:#fff url('../assets/img/default-cast.png') no-repeat;
+    background-position: center center;
+}
+.navbar-brand{
+    color:$white;
+    &:hover{
+        color:$white;
+    }
+}
+a{
+    text-decoration: none;
+    color:$white;
+    &:hover{
+        text-decoration: none;
+        color:$yellow;
+    }
+}
+.show-details .image {
+    position:sticky;
+    top:53px;
+}
+.cover{
+    & .cover-movie-bg{
+        //background-image:url(../assets/img/cover-1.jpg);
+        background: $navbar-background;
+        height:500px;
+        color:$white;
+    }
+}
+  
