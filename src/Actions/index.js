@@ -1,5 +1,5 @@
 import request from 'superagent'
-const API_URL = 'http://api.tvmaze.com';
+const API_URL = 'https://api.tvmaze.com';
 
 export function showListAction(dispatch){
     return function(dispatch){
